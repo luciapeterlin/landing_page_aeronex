@@ -1,0 +1,447 @@
+/****** Estilos generales ******/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DinPro', sans-serif;
+}
+
+body{
+  color: #212121;
+}
+
+@font-face {
+  font-family: 'DinPro';
+  src: url('../fonts/regular.otf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'DinPro';
+  src: url('../fonts/medium.otf') format('truetype');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'DinPro';
+  src: url('../fonts/bold.otf') format('truetype');
+  font-weight: bold;
+}
+
+h1{
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 60px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: 2px;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+p{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  padding: 10px 0px;
+  letter-spacing: 0.6px;
+  color: #616161;
+}
+
+.subheading{
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #9E9E9E;
+}
+
+hr{
+  width: 120px;
+  margin-top: 20px;
+  border-top: 1px solid #0451DD;
+}
+
+button{
+  cursor: pointer;
+}
+
+a:link{ 
+  text-decoration: none; 
+}
+
+.hide-desktop{
+  display: none;
+}
+
+/****** Navbar ******/
+
+nav{
+  padding: 0px 120px;
+  height: 88px;
+  line-height: 88px;
+
+}
+
+.menu{
+  float: right;
+}
+
+.menu li{
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a{
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #212121;
+  padding: 0px 12px;
+}
+
+.menu a:active {
+  color: #0451DD;
+}
+
+.menu li:active, .menu li:hover{
+  border-bottom: 2px solid #0451DD;
+}
+
+.button-link{
+  border-left: 1px solid #E1E5EC;
+  padding: 0px 9px;
+}
+
+.button-link:last-child{
+  border-right: 1px solid #E1E5EC;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.logo-aeronex{
+  color: #134CB5;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 6px;
+  letter-spacing: 1.3px;
+}
+
+.nex{
+  color: #558FF9;
+}
+
+.burger-icon{
+  display: none;
+}
+
+/****** Primera Sección ******/
+
+.arrow{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.section-1{
+  position: relative;
+}
+
+.cover img{
+  width: 100%;
+  display: block;
+}
+
+.text-cover{
+  background-color: #fff;
+  bottom: 0px;
+  position: absolute;
+  padding: 45px 80px 40px 120px;
+}
+
+/****** Segunda Sección ******/
+
+.section-2{
+  padding: 100px 0px 100px 120px;
+  display: flex;
+  background: linear-gradient(to right, #FAFAFA 50%, #FFF 50%);
+}
+
+.column-1{
+  width: 30%;
+  padding-top: 6%;
+  margin-right: 10px;
+}
+
+.button-primary{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #0451DD;
+  border-radius: 2px;
+  border: 1px solid #0451DD;
+  padding: 10px 24px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.column-2{
+  width: 70%;
+}
+
+article img{
+  width: 100%;
+  display: block;
+}
+
+.card-content{
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid #212121;
+  margin-bottom: 60px;
+}
+
+.button-info{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #0451DD;
+  background-color: transparent;
+  border: 0px;
+  text-underline-offset: 5px;
+}
+
+.swiper-pagination{
+  bottom: 5px !important;
+  left: 19% !important;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  top: 96% !important;
+}
+
+.swiper-button-prev{
+  right: 20% !important;
+  left: auto !important;
+  content: url(../img/prev.svg);
+  transform: rotate(180deg);
+}
+
+.swiper-button-next{
+  right: 13% !important;
+  content: url(../img/prev.svg);
+}
+
+
+/****** Mobile ******/
+
+@media screen and (max-width: 1400px) {
+  nav{
+    padding: 0px 60px;
+  } 
+}
+
+@media screen and (max-width: 1260px) {
+  nav{
+    padding: 0px 16px;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    top: 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #E1E5EC;
+  }
+
+  .logo-container img{
+    width: 36px;
+  }
+  
+  .logo-aeronex{
+    font-size: 24px;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .menu {
+    display: none;
+    background-color: #fff;
+  }
+
+  .menu.active {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    top: 60px;
+    left: 0px;
+    width: 100%; 
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .menu{
+    padding-top: 15px;
+    padding-bottom: 60px;
+  }
+
+  .menu li{
+    display: block;
+    border-bottom: 1px solid #E1E5EC;
+    padding: 8px 5px;
+  }
+
+  .menu a{
+    font-size: 18px;
+  }
+
+  .menu li:active, .menu li:hover{
+    border-bottom: 1px solid #E1E5EC;
+  }
+
+  .menu a:after{
+    content: url('../img/icon-chevron-right.svg');
+    color: #E0E0E0;
+    position: absolute;
+    right: 20px;
+    padding-top: 4px;
+  }
+
+  .burger-icon{
+    display: block;
+    border-left: 1px solid #E1E5EC;
+    float: right;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1{
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  h2{
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 10px;
+  }
+
+  .hide-mobile{
+    display: none;
+  }
+
+  .hide-desktop{
+    display: block;
+  }
+
+  /***** Primera Sección *****/
+
+  .section-1{
+    margin-top: 60px;
+  }
+
+  .text-cover{
+    position: relative;
+    padding: 32px 16px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .section-1 hr, .section-2 hr{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .text-cover button{
+    display: block;
+    background-color: #0451DD;
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 2px;
+  }
+
+  .column-1, .homeSwiper{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /***** Segunda Sección *****/
+
+  .section-2{
+    margin-top: 10px;
+    padding: 32px 0px ;
+    flex-direction: column;
+    background: transparent;
+  }
+
+  .column-1{
+    padding: 0px 16px;
+  }
+
+  .column-2{
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .button-primary{
+    width: 100%;
+  }
+
+  .swiper-hero{
+    margin-left: 10px;
+  }
+
+  .swiper-pagination{
+    left: 0px !important;
+    text-align: left !important;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .swiper-button-prev{
+      right: auto !important;
+      left: 32% !important;  
+      top: 97% !important;
+  }
+
+  .swiper-button-next{
+      right: auto !important;
+      left: 47% !important; 
+      top: 97% !important; 
+  }
+}

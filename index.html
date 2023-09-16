@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AeroNex - Sitio Oficial</title>
+      <meta name="description" content="AeroNex Sitio Oficial"/>
+      <meta name="keywords" content="transporte aéreo, vuelos nacionales. vuelos internacionales, aeropuertos, reservas de vuelos, aerolíneas"/>
+      <meta name="author" content="AeroNex"/>
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   </head>
+   <body>
+      <header>
+         <!-- Navbar -->
+         <nav>
+            <a href="#">
+               <div class="logo-container">
+                  <img src="img/logo-icon.svg" alt="Logo AeroNex">
+                  <span class="logo-aeronex">Aero<span class="nex">Nex</span></span>
+               </div>
+            </a>
+            <ul class="menu">
+               <li><a href="#">Nosotros</a></li>
+               <li><a href="#">Novedades</a></li>
+               <li><a href="#">Inversores</a></li>
+               <li><a href="#">Sumate al equipo</a></li>
+               <li><a href="#">Productos y Servicios</a></li>
+               <li><a href="#">Proveedores</a></li>
+               <li class="button-link"><a href="#"><img src="img/icon.svg" alt="Icono asterisco"></a></li>
+               <li class="button-link"><a href="#">ES</a></li>
+               <li class="button-link"><a href="#">Sitios</a></li>
+            </ul>
+            <a class="burger-icon" onclick="toggleMenu()">
+            <img src="img/burger-icon.svg" alt="Icono Menú Mobile">
+            </a>
+         </nav>
+      </header>
+      <main>
+         <!-- Primera Sección -->
+         <section class="section-1">
+            <div class="cover">
+               <picture>
+                 <source media="(max-width:992px)" srcset="img/cover-mobile.webp">
+                 <img src="img/cover.webp" alt="AeroNex Cover">
+               </picture>
+            </div>
+            <div class="text-cover">
+               <span class="subheading">Lorem ipsum</span>
+               <h2 class="hide-mobile">Lorem ipsum dolor sit<br>amet, consectetur</h2>
+               <h2 class="hide-desktop">Lorem ipsum dolor sit<br>amet</h2>
+               <a href="#">
+                  <img src="img/arrow-icon.svg" alt="icono flecha" class="arrow">
+               </a>
+               <hr class="hide-desktop">
+               <p class="hide-desktop">Lorem ipsum dolor sit amet, consectetur. Aenean sed metus vel diam consequat mollis. Praesent metus</p>
+               <a href="#">
+                  <button class="hide-desktop button-secondary">Call to action</button>
+               </a>
+            </div>
+         </section>
+         <!-- Segunda Sección -->
+         <section class="section-2">
+            <div class="column-1">
+               <span class="subheading">Lorem ipsum</span>
+               <h1>Lorem ipsum<br>dolor sit amet</h1>
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur. Aenean sed metus vel diam consequat mollis. Praesent metus</p>
+               <a href="#">
+                  <button class="button-primary">Call to action</button>
+               </a>
+            </div>
+            <div class="column-2">
+               <article class="swiper swiper-hero">
+                  <!-- Swiper -->
+                  <div class="swiper-wrapper">
+                     <figure class="swiper-slide">
+                        <picture>
+                           <source media="(max-width:992px)" srcset="img/card-img-mobile-1.webp">
+                           <img src="img/card-img-1.webp" alt="Imagen Card 1">
+                        </picture>
+                        <div class="card-content">
+                           <h6>Lorem ipsum</h6>
+                           <p>Quisque vel dictum magna.</p>
+                           <a href="#">
+                              <button class="button-info">Call to action</button>
+                           </a>
+                        </div>
+                     </figure>
+                     <figure class="swiper-slide">
+                        <picture>
+                           <source media="(max-width:992px)" srcset="img/card-img-mobile-2.webp">
+                           <img src="img/card-img-2.webp" alt="Imagen Card 2">
+                        </picture>
+                        <div class="card-content">
+                           <h6>Lorem ipsum</h6>
+                           <p>Quisque vel dictum magna.</p>
+                           <a href="#">
+                              <button class="button-info">Call to action</button>
+                           </a>
+                        </div>
+                     </figure>
+                     <figure class="swiper-slide">
+                        <picture>
+                           <source media="(max-width:992px)" srcset="img/card-img-mobile-3.webp">
+                           <img src="img/card-img-3.webp" alt="Imagen Card 3">
+                        </picture>
+                        <div class="card-content">
+                           <h6>Lorem ipsum</h6>
+                           <p>Quisque vel dictum magna.</p>
+                           <a href="#">
+                              <button class="button-info">Call to action</button>
+                           </a>
+                        </div>
+                     </figure>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </article>
+            </div>
+         </section>
+      </main>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   </body>
+</html>
