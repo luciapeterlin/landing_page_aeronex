@@ -4,8 +4,6 @@ Este repositorio contiene el código y los recursos utilizados para crear una la
 
 Para su desarrollo se utilizó HTML5, CSS3, JavaScript y la librería SwiperJs.
 
-#### [Visitar sitio](https://aeronex-landing-page.surge.sh/)
-
 ## Instrucciones de uso:
 1) Descargar el archivo ZIP de este repositorio.
 2) Abrir el archivo index.html en un navegador web.
